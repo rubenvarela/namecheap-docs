@@ -1,0 +1,1772 @@
+
+<!DOCTYPE html>
+<html class="no-js" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/" xmlns:nc="http://namecheap.com/2010/schema">
+<head><link rel="stylesheet" type="text/css" href="https://files.namecheap.com/cdn/1300/assets/css/v1300.global-style.min.css" nc:bundle="none" />
+
+
+    <!--Start Cookie Management -->
+    <script>!function(){function s(){t="OptanonConsent";var e,t=(t=document.cookie.match(new RegExp("(^| )"+t+"=([^;]+)")))?decodeURIComponent(t[2]):void 0,n="groups=",r=[];if(t){if(t.split("&").some(function(t){return 0===t.trim().indexOf(n)&&(e=t.substring(n.length,t.length),!0)}),e)for(var a=e.split(","),i=0;i<a.length;i++){var o=a[i],c=o.indexOf(":1");-1<c&&(o=o.substring(0,c),r.push(o))}}else r=["C0001","C0002","C0003","C0004","101","102","103","104","105","106","107","108","109","110"];return r}window.userAllowedScripsProcessor={activateUserAllowedScripts:function(){var t=s();if(t&&0<t.length)for(var e=0;e<t.length;e++){var n=t[e],r=document.querySelectorAll("script.nc-cookie-category-"+function(t){switch(t){case"C0001":return"1";case"C0002":return"2";case"C0003":return"3";case"C0004":return"4";default:return t}}(n)+"[type='text/plain']");if(r&&0<r.length)for(var a=0;a<r.length;a++){var i=r[a],o=document.createElement("script");if(i.attributes)for(e=0;e<i.attributes.length;e++){var c=i.attributes[e];o.setAttribute(c.name,c.value)}o.type="text/javascript",o.innerText=i.innerText,i.parentElement.appendChild(o),i.parentElement.removeChild(i)}}},addActiveGroupsToDataLayer:function(){window.dataLayer||(window.dataLayer=[]);var t=s();window.dataLayer.push({OnetrustActiveGroups:","+t.join(",")+","})}},setTimeout(function(){var t;(t=document.createElement("script")).src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",t.type="text/javascript",t.charset="UTF-8",t.dataset.domainScript="b1960cb7-b316-4c11-b5de-7b632670221f",t.onload=function(){setTimeout(function(){try{Optanon.LoadBanner()}catch(t){window.dataLayer.push({event:"OneTrustGroupsUpdateFailed"})}},1e3)},document.head.appendChild(t)},2e3)}();</script>
+    <!--End Cookie Management -->
+    <!--Start Shopping Cart Actions Tracker -->
+    <script>!function(e){function o(e,n){var a;a=e,window.dataLayer||(window.dataLayer=[]),window.dataLayer.push(a),n&&n()}function r(e){return e?e+" cycle":"1 cycle"}function i(e,n){return e+" "+n}function c(e){return(e.groupTitle+" "+e.title).toLowerCase()}function u(e){return e+"/Add-On"}function m(e){delete e.title,delete e.groupTitle,delete e.ignoreQuantity}function a(t){t.namingParameters.addons.forEach(function(e){var n,a;e.name=(a=e,(u((n=t).category)+" "+c(a)+" "+i(n.namingParameters.duration,n.namingParameters.durationType)+" "+r(n.namingParameters.billingCycle)).toLowerCase()),e.id=c(e),e.category=u(t.category),e.variant=t.variant,function(e,n){if(n.ignoreQuantity){if(n.ignoreQuantity>=n.quantity?(n.ignoreQuantity=n.quantity,n.quantity=0):n.quantity=n.quantity-n.ignoreQuantity,0===n.quantity)return n.quantity=n.ignoreQuantity,n.price="0.00",m(n);var a=n.ignoreQuantity;m(n);var t={};Object.assign(t,n),t.quantity=a,t.price="0.00",e.push(t)}else m(n)}(t.namingParameters.addons,e)})}function t(e){var n;e.id=e.namingParameters.productName.toLowerCase(),e.category=e.namingParameters.productType.split(" ").filter(function(e){return!s.includes(e.toLowerCase())}).join(" "),e.variant=e.namingParameters.productAction,e.name=((n=e).category+" "+n.namingParameters.productName+" "+i(n.namingParameters.duration,n.namingParameters.durationType)+" "+r(n.namingParameters.billingCycle)).toLowerCase()}function d(n){n.forEach(function(e){e.namingParameters&&(t(e),e.namingParameters.addons&&0!==e.namingParameters.addons.length&&(a(e),Array.prototype.push.apply(n,e.namingParameters.addons)),delete e.namingParameters)})}var s;function g(e,n){return{event:"entry",source:e,action:n}}e.actionsTracker=(s=["namecheap"],{addToCart:function(e,n,a){var t,r,i;d(e),o((t=e,r=n,(i={ecommerce:{},event:"addToCart"}).ecommerce.currencyCode=r,i.ecommerce.add={products:t},i),a)},removeFromCart:function(e,n){var a,t;d(e),o((a=e,(t={ecommerce:{},event:"removeFromCart"}).ecommerce.remove={products:a},t),n)},goToDetails:function(e,n){var a,t;d(e),o((a=e,(t={ecommerce:{},event:"productDetails"}).ecommerce.detail={products:a},t),n)}}),e.entryTracker={signIn:function(e,n){o(g(e,"sign-in"),n)},signUp:function(e,n){o(g(e,"sign-up"),n)}}}(window);</script>
+    <!--End Shopping Cart Actions Tracker -->
+    <script type="text/plain" class="nc-cookie-category-2"> window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(20),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{h?h-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(21),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(h+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,S=y.hash,this[u]=b.now()}function o(){M--,y.hash!==S&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(10),x=t(11),E=t(8),P=t(6),O=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),N=j.get("tracer");t(15),b.features.spa=!0;var S,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(h,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),P.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),R.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+c),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+c),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(23)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t(23)(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,h,"dom-"),f.inPlace(HTMLHeadElement.prototype,h,"dom-"),f.inPlace(HTMLBodyElement.prototype,h,"dom-"),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(23),a=t("ee").get("promise"),c=i(a),s=t(20),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(23)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,P.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(23)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,P=document.createTextNode(E);new l(a).observe(P,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(19),l=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),c=t(21),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],21:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],22:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(20),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(20),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(22)},{}]},{},["loader",2,15,5,3,4]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"NRBR-2d13a2750749c77c552",applicationID:"5867736",sa:1} </script>
+    <script type="text/javascript">
+        userAllowedScripsProcessor.activateUserAllowedScripts();
+    </script>
+          <!--Start Data Layer -->
+        <script type="text/javascript">
+            userAllowedScripsProcessor.addActiveGroupsToDataLayer();
+        </script>
+              <script src="/DataLayer/UserHashDataLayer.ashx"></script> <script>(function(w, d, s, l, i){w[l] = w[l] ||[]; w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);})(window, document,'script','dataLayer','GTM-544JFM');</script>
+              <!-- End Data Layer -->
+
+                  
+
+    <title>
+	Namecheap.com - API Documentation - namecheap.domains.dns.setCustom
+</title><meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<link rel="shortcut icon" href="/assets/img/nc-icon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="https://files.namecheap.com/cdn/1300/assets/img/nc-icon/namecheap-icon-57x57.png">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--  Bing Verification Meta Tag -->
+    <meta name="msvalidate.01" content="E460EA18492F3162D0A602F24040C3F1" />
+    <!-- End Bing Verification Meta Tag -->
+    <link rel="search" type="application/opensearchdescription+xml" href="/namecheap-opensearch.xml" title="Namecheap.com Domain Search" /><meta name="google-site-verification" content="jEgfrLbRNEceWXYO-8n_p7SsUxVdM5-nyCnpzoTZ-G8" />
+        
+    
+    <script type="text/javascript" src="https://files.namecheap.com/cdn/0/assets/js/jquery/1.8.3/v1300.jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://files.namecheap.com/cdn/0/assets/js/v1300.html5shiv.js"></script>
+
+        <script type="text/javascript" src="https://static.nc-img.com/assets/js/respond.min.js"></script>
+
+	<![endif]-->
+	<!--[if IE 9]>
+        <script type="text/javascript" src="https://files.namecheap.com/cdn/0/assets/js/v1300.media.match.min.js"></script>
+	<![endif]-->
+        
+    
+    
+    <script src="https://ap.www.namecheap.com/siteservices/navigationscript?fromCMS=true&fromCMSIdentity=fab857f5-1689-4c9b-a62d-4fb9950c0a06" async></script>
+    
+    
+
+ <!-- from head -->
+    <!-- CSS ENDS -->
+
+    <script type="text/javascript"><!--
+        var NcGlobal = { IsLoggedIn: false, CountryCode: "XX", Roles: [] }
+    </script>
+    
+<!-- Head Extra Content Start -->
+<script type="text/javascript">!function(){var e=document.createElement("style"),n=document.body?document.body:document.querySelector("head");e.innerHTML='*[data-acsb="trigger"] {\n    display: none !important;\n}',n.appendChild(e)}();</script>
+<script type="text/javascript">
+(function () {
+    var jsdPaths = ['/myaccount/login', '/myaccount/signup', '/myaccount/twofa/', '/resetpassword.aspx', '/twofa', '/auth/sso', '/cart/', '/shoppingcart'];
+    var host = location.hostname.toLowerCase();
+    var path = location.pathname.toLowerCase();
+    var enabled = host.indexOf('ap.') === 0;
+    for (var i = 0; !enabled && i < jsdPaths.length; i++) {
+        enabled = path.indexOf(jsdPaths[i]) === 0;
+    }
+    if (!enabled || (window.cloudflare && window.cloudflare.jsd)) {
+        return;
+    }
+    window.ncJsdOnload = function () {
+        var run = function () {
+            window.cloudflare.jsd.executeOnce({});
+        };
+        if (document.body) {
+            run();
+        } else {
+            document.addEventListener('DOMContentLoaded', run);
+        }
+    };
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = '/cdn-cgi/challenge-platform/scripts/jsd/api.js?onload=ncJsdOnload';
+    (document.head || document.getElementsByTagName('head')[0]).appendChild(script);
+})();
+</script>
+<!-- Head Extra Content End -->
+<link rel="canonical" href="https://www.namecheap.com/support/api/methods/domains-dns/set-custom/" /><meta name="Description" content="Sets domain to use custom DNS servers. NOTE: Services like URL forwarding, Email forwarding, Dynamic DNS will not work for domains using custom nameservers." /><link rel="stylesheet" type="text/css" href="https://files.namecheap.com/cdn/1300/assets/css/GoonDocks/v1300.csharp.css" nc:bundle="none" />
+<meta name="Generator" content="Sitefinity 3.7.2136.240:1" /></head>
+<body class="login">
+   <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-544JFM"
+       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+    <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="15E68AF1" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="k+XIcA2qLlqU4SbLBsPn3Y0JeGwXrfZRk05/0i3UiqJJEmX3B+p9uyH52xlgee/jEtooERr/D8VUmu+0ycSHHrwbZyg9bF/wyC9/6BlLLO+O6WHB6yEEZxzDC51E8t5Gajj5lw==" />
+</div>
+    
+
+	
+    <!-- HEADER BEGIN -->
+    <header class="gb-scope" role="banner" style="">
+		<div class="gb-header" data-zid="feFullPage">
+			<div class="gb-top-block gb-py-small">
+				<div class="gb-container">
+					<div class="gb-row gb-row--between gb-row--no-gutters gb-row--top gb-row--middle">
+						<div class="gb-col gb-d-flex">
+							<div class="gb-dropdown gb-dropdown--bubble gb-mr-small gb-mr-sm-1" data-ncid="dropdown-support">
+								<a href="/support/" class="gb-btn gb-dropdown__toggle gb-btn--default-ghost gb-dropdown__toggle--hide gb-btn--sm">Contact us</a>
+								
+            <div class="gb-dropdown__holder">
+                <a class="gb-dropdown__item" href="https://support.namecheap.com/index.php?/Tickets/Submit" >
+Submit Ticket
+</a>
+                <a class="gb-dropdown__item" href="/help-center/live-chat/" >
+Live Chat
+</a>
+                <a class="gb-dropdown__item" href="/support/knowledgebase/article.aspx/9196/5/how-and-where-can-i-file-abuse-complaints/" >
+Report Abuse
+</a>
+                
+            </div>
+        
+							</div>
+							<a data-ncid="button-sign-up" id="gb-signup-btn" class="gb-btn gb-btn--default-ghost gb-sign-up gb-mr-sm-1 gb-d-none gb-d-md-block gb-btn--sm" href="/myaccount/signup/">Sign up</a>
+							<div class="gb-dropdown gb-dropdown--bubble gb-dropdown--sign-in" id="gb-signin-btn" data-ncid="button-sign-in">
+								<button class="gb-btn--default-muted gb-btn gb-dropdown__toggle gb-dropdown__toggle--hide gb-btn--sm">
+									<i class="gb-icon gb-icon-user gb-d-none gb-d-sm-block"></i>
+									Sign in
+								</button>
+								<div class="gb-dropdown__holder" tabindex="-1">
+									<div class="gb-dropdown__content">
+										<i class="gb-dropdown__item"></i>
+										<div class="gb-login-form gb-py-2">
+											<fieldset>
+												<input data-ncid="input-login-username" type="text" name="LoginUserName" title="Username" placeholder="Username" autocapitalize="off" autocorrect="off" class="gb-form-control gb-mb-2" maxlength="20" />
+												<div id="gb-signin-password" class="gb-form-field gb-form-field--with-action">
+													<input data-ncid="input-login-password" id="gb-signin-password-input" type="password" name="LoginPassword" title="Password" placeholder="Password" class="gb-form-control gb-mb-2" maxlength="100" />
+													<i data-ncid="icon-password" class="gb-icon gb-icon--password"></i>
+												</div>
+												<input type="hidden" name="hidden_LoginPassword" />
+												<a href="/myaccount/login/" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_topNavLoginLink" data-ncid="button-sign-in" class="gb-btn gb-btn--block gb-btn--secondary gb-mb-2 js-signin-btn" rel="follow" onclick="window.entryTracker.signIn(&#39;header&#39;)">Sign In</a>
+
+												<div class="gb-text-base gb-text-small">
+													<a href="https://ap.www.namecheap.com/ResetPassword" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_passwordRemiderLink" data-ncid="link-forgot-password" class="gb-link gb-link--gray" title="Password Reminder">
+														<span class="gb-link__text">
+															Forgot your password?
+														</span>
+													</a>
+												</div>
+												<a class="gb-btn gb-btn--primary gb-btn--block gb-d-md-none gb-mt-2" href="/myaccount/signup/"><span>Sign up</span></a>
+											</fieldset>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gb-dropdown gb-dropdown--bubble gb-dropdown--sign-in" id="gb-loginned-btn" data-ncid="button-user-info">
+								<button class="gb-btn--default-muted gb-btn gb-dropdown__toggle gb-dropdown__toggle--hide gb-btn--sm">
+									<i class="gb-icon gb-icon-user gb-d-none gb-d-sm-block"></i>
+									<span class="gb-text-truncate" data-username=""></span>
+									<i class="gb-icon gb-icon-down"></i>
+								</button>
+
+								<div class="gb-dropdown__holder">
+									<i class="gb-dropdown__item"></i>
+									<div class="gb-panel">
+										<header class="gb-panel__header">
+											<i class="gb-icon gb-icon-user"></i>
+											<span id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_headerchangeAccount" class="gb-text-reset">Your Account</span>
+											<a class="gb-btn gb-btn--sm gb-btn--primary-muted" href="/myaccount/signout.aspx">Sign Out</a>
+										</header>
+										<div class="gb-panel__body gb-text-base">
+											<div class="gb-row gb-row--gutter-sm gb-mb-2">
+												<div class="gb-col-5 gb-col-sm-4 gb-pr-0"><b><span>Customer</span></b></div>
+												<div class="gb-col-7 gb-col-sm-8">
+													<p class="gb-text-truncate gb-mb-0"><span class="customer"></span></p>
+												</div>
+											</div>
+											<div class="gb-row gb-row--gutter-sm gb-mb-3">
+												<div class="gb-col-5 gb-col-sm-4 gb-pr-0"><b><span>Username</span></b></div>
+												<div class="gb-col-7 gb-col-sm-8">
+													<p class="gb-text-truncate gb-mb-0"><span class="username"></span></p>
+												</div>
+											</div>
+											<ul class="gb-list-unstyled gb-panel__list gb-text-reset">
+												<li class="gb-mb-small"><a id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_accountPanelDashboardLink">Dashboard</a></li>
+												<li class="gb-mb-small"><a id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_accountPanelProfileLink">Profile</a></li>
+												<li class="gb-mb-small"><a id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_accountPanelSupportPinLink">Support PIN</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="gb-col-auto gb-d-flex gb-row--middle">
+							<div class="gb-dropdown gb-dropdown--bubble gb-dropdown--bubble-right gb-cart">
+								<a data-ncid="button-cart" id="gb-cart-btn" href="/shoppingcart/" class="gb-btn--default-ghost gb-btn gb-dropdown__toggle gb-dropdown__toggle--hide" data-ncid="button-cart">
+									<span class="gb-icon"></span>
+									<span class="gb-d-none gb-d-md-block"><span class="gb-cart__total js-cart-total-value" style="display:none"></span></span>
+								</a>
+								<div class="gb-dropdown__holder">
+									<i class="gb-dropdown__item"></i>
+									<div class="gb-panel">
+										<header class="gb-panel__header">
+											<i class="gb-icon gb-icon-cart"></i>
+											<span id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_headerchangeCart" class="gb-text-reset">Your Cart</span>
+										</header>
+										<div class="gb-panel__body gb-text-base">																					
+											<div class="gb-row gb-row--middle gb-mb-3">
+												<div class="gb-col">
+													<span>Subtotal</span>
+												</div>
+												<div id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_spanCartTotalPanel" class="gb-col-auto js-cart-total-value">$0.00</div>
+											</div>
+											<a class="gb-btn gb-btn--primary gb-btn--block" href="/shoppingcart/"><span>View Cart</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Currency -->
+							<div id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_currencyList" data-ncid="dropdown-currency" class="gb-dropdown gb-dropdown--currency gb-dropdown--bubble gb-dropdown--bubble-right gb-ml-1">
+								<span id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_currencyDisplay" class="gb-btn--default-ghost gb-btn gb-dropdown__toggle gb-dropdown__toggle--hide curency-display">$<span class='gb-currency-code'>USD</span></span>
+								<div class="gb-dropdown__holder">
+									
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="USD">
+												$ U.S. Dollar
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="EUR">
+												€ Euro
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="GBP">
+												£ British Pound
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="CAD">
+												C$ Canadian Dollars
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="AUD">
+												A$ Australian Dollars
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="INR">
+												Rs Indian Rupees
+											</a>
+										
+											<a class="gb-dropdown__item currency-menu-item" href="#" rel="nofollow" nc:rel="CNY">
+												¥ China Yuan RMB
+											</a>
+										
+									<a class="gb-dropdown__item gb-d-flex gb-row--between" href="/support/payment/currency-exchange-rates/">
+										<span>More Info</span><i class="gb-icon gb-icon-next"></i>
+									</a>
+								</div>
+							</div>
+
+							
+
+							<button id="headerSearchBtn" type="button" class="gb-btn gb-btn--default-ghost gb-btn--icon gb-ml-1 gb-d-none gb-d-lg-block gb-btn--search" aria-label="Search">
+								<i class="gb-icon gb-icon-search"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gb-container gb-navbar-holder">
+				<div class="gb-row gb-row--gutter-sm gb-row--right gb-py-2 gb-py-lg-3">
+					<div class="gb-col-lg">
+						<div class="gb-row gb-row--middle gb-row--between">
+							<div class="gb-col gb-pr-md-0">
+								<strong class="gb-logo">
+									<a href="/"><img src="https://files.namecheap.com/cdn/1300/assets/img/logos/namecheap.svg" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_nclogo" alt="Namecheap" /></a>
+								</strong>
+							</div>
+							<div class="gb-col-auto gb-d-lg-none gb-pt-lg-1 gb-pr-1 gb-pr-md-2">
+								<button type="button" id="burgerMenuBtn" class="gb-navbar__toggle gb-mb-0" onclick="if (typeof (LogGAEvent) === 'function') LogGAEvent('Menu', 'click', 'menu');">
+									<i class="gb-icon gb-icon-burger-menu"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<nav class="gb-navbar gb-col-lg-auto">
+						<div class="gb-navbar__drop gb-pt-lg-1">
+							<div action="#" method="get" class="gb-search-form" role="search" data-ncid="search-form">
+								<div class="gb-search-form__slide gb-py-2">
+									<div class="gb-container">
+										<fieldset>
+											<div class="gb-input-group">
+												<input name="ctl00$ctl00$ctl00$ctl00$base_content$web_base_content$siteSearchQuery" type="search" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_siteSearchQuery" data-ncid="search-form-input" class="gb-input-group__item gb-form-control" placeholder="Search Namecheap" />
+												<button type="button" class="ncRedirectButton gb-input-group__item gb-btn gb-btn--primary" value="eyJ1IjoiL3N1cHBvcnQvS25vd2xlZGdlYmFzZS9zZWFyY2hSZXN1bHQuYXNweCIsIm0iOiJHRVQiLCJiIjoiRmFsc2UiLCJzIjoiZmllbGRzZXQiLCJwIjogW3sibiI6InEiLCJ2IjoiIiwiZiI6ImN0bDAwJGN0bDAwJGN0bDAwJGN0bDAwJGJhc2VfY29udGVudCR3ZWJfYmFzZV9jb250ZW50JHNpdGVTZWFyY2hRdWVyeSJ9XX0=" name="ctl00$ctl00$ctl00$ctl00$base_content$web_base_content$siteSearchButton$actionObjectPlaceHolder">Search</button>
+
+
+											</div>
+											<button data-ncid="button-close" type="button" class="gb-search-form__close gb-d-none gb-d-lg-block close">
+												<i class="gb-icon gb-icon-close"></i>
+											</button>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+							
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/domains/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'domains'); }">
+Domains
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/domains/domain-name-search/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'domain name search'); }">
+Domain Name Search
+</a>
+                    <a href="/domains/transfer/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'domain transfer'); }">
+Domain Transfer
+</a>
+                    <a href="/domains/explore-new-tlds/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'new tlds'); }">
+New TLDs
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                    <a href="/domains/bulk-domain-search/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'bulk domain search'); }">
+Bulk Domain Search
+</a>
+                    <a href="/domains/full-tld-list/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'tld list'); }">
+TLD List
+</a>
+                    <a href="/market/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'namecheap market'); }">
+Namecheap Market
+</a>
+                    <a href="/domains/whois/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'whois lookup'); }">
+Whois Lookup
+</a>
+                    <a href="/security/premiumdns/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'premiumdns'); }">
+PremiumDNS
+</a>
+                    <a href="/domains/freedns/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Domains', 'click', 'freedns'); }">
+FreeDNS
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/hosting/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'hosting'); }">
+Hosting
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/hosting/shared/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'shared hosting'); }">
+Shared Hosting
+</a>
+                    <a href="/wordpress/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'hosting for wordpress'); }">
+Hosting for WordPress
+</a>
+                    <a href="/hosting/reseller/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'reseller hosting'); }">
+Reseller Hosting
+</a>
+                    <a href="/hosting/vps/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'vps hosting'); }">
+VPS Hosting
+</a>
+                    <a href="/hosting/dedicated-servers/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'dedicated servers'); }">
+Dedicated Servers
+</a>
+                    <a href="/hosting/hosting-migrate-to-namecheap/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Hosting', 'click', 'migrate to namecheap'); }">
+Migrate to Namecheap
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/wordpress/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('WordPress', 'click', 'wordpress'); }">
+WordPress
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/wordpress/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('WordPress', 'click', 'managed hosting for wordpress'); }">
+Managed Hosting for WordPress
+</a>
+                    <a href="/wordpress/migrate/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('WordPress', 'click', 'migrate to wordpress'); }">
+Migrate to WordPress
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/hosting/email/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Email', 'click', 'email'); }">
+Email
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/hosting/email/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Email', 'click', 'business email'); }">
+Business Email
+</a>
+                    <a href="/security/anti-spam-protection/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Email', 'click', 'anti-spam protection'); }">
+Anti-Spam Protection
+</a>
+                    <a href="https://privateemail.com" target="_blank" rel="noopener noreferrer" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Email', 'click', 'login to webmail'); }">
+Login to Webmail
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/apps/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'marketing tools'); }">
+Marketing Tools
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/build-and-grow-hub/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'how to get started'); }">
+How to Get Started
+</a>
+                    <a href="/apps/business-starter-kit/?aff_sub2=top_nav" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'business starter kit'); }">
+Business Starter Kit
+<span class="gb-label gb-label--marketing">NEW</span><span class="gb-label gb-label--open-text">FREE</span>
+</a>
+                    <a href="/apps/business-starter-kit/?aff_sub2=top_nav" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'free llc'); }">
+Free LLC
+<span class="gb-label gb-label--marketing">US ONLY</span>
+</a>
+                    
+                    <div class="gb-dropdown gb-dropdown__item gb-dropdown__submenu-dropdown">
+                        <a href="/relate/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'growth tools'); }">
+Growth Tools
+<span class="gb-label gb-label--marketing">NEW</span><span class="gb-label gb-label--feature">AI</span>
+</a>
+                        <i class="gb-icon gb-icon-next"></i>
+                        <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+                        <div class="gb-dropdown__holder">
+                            <a href="/relate/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Relate Marketing Suite', 'click', 'relate marketing suite'); }">
+Relate Marketing Suite
+<span class="gb-label gb-label--marketing">BUNDLE</span><span class="gb-label gb-label--open-text">SAVE</span>
+</a>
+                            <a href="/relate/seo/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('SEO', 'click', 'seo'); }">
+SEO
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/relate/social/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Social', 'click', 'social'); }">
+Social
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/relate/reviews/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Reviews', 'click', 'reviews'); }">
+Reviews
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/relate/ads/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Ads', 'click', 'ads'); }">
+Ads
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/relate/local/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Local', 'click', 'local'); }">
+Local
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/relate/radar/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Brand Monitoring', 'click', 'brand monitoring'); }">
+Brand Monitoring
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="gb-dropdown gb-dropdown__item gb-dropdown__submenu-dropdown">
+                        <a href="/visual/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Marketing Tools', 'click', 'design tools'); }">
+Design Tools
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                        <i class="gb-icon gb-icon-next"></i>
+                        <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+                        <div class="gb-dropdown__holder">
+                            <a href="/visual/site-maker/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Site Maker', 'click', 'site maker'); }">
+Site Maker
+</a>
+                            <a href="/visual/font-generator/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Font Maker', 'click', 'font maker'); }">
+Font Maker
+</a>
+                            <a href="/logo-maker/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Logo Maker', 'click', 'logo maker'); }">
+Logo Maker
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/visual/business-name-generator/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Business Name Generator', 'click', 'business name generator'); }">
+Business Name Generator
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            <a href="/visual/card-maker/" class="gb-dropdown__subitem gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Business Card Maker', 'click', 'business card maker'); }">
+Business Card Maker
+</a>
+                            
+                        </div>
+                    </div>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/security/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'security'); }">
+Security
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/security/ssl-certificates/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'ssl certificates'); }">
+SSL Certificates
+</a>
+                    <a href="/security/domain-privacy-service/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'domain privacy'); }">
+Domain Privacy
+</a>
+                    <a href="/security/protect-website/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'website security'); }">
+Website Security
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                    <a href="/security/fix-hacked-website/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'fix hacked website'); }">
+Fix Hacked Website
+<span class="gb-label gb-label--price">SOS</span>
+</a>
+                    <a href="/security/premiumdns/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'premiumdns'); }">
+PremiumDNS
+</a>
+                    <a href="/supersonic-cdn/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'cdn'); }">
+CDN
+</a>
+                    <a href="/vpn/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'vpn'); }">
+VPN
+<span class="gb-label gb-label--marketing">UPDATED</span>
+</a>
+                    <a href="/cyber-insurance/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'cyber insurance'); }">
+Cyber Insurance
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                    <a href="/security/2fa-two-factor-authentication/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', '2fa'); }">
+2FA
+</a>
+                    <a href="/dns/free-public-dns/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'public dns'); }">
+Public DNS
+</a>
+                    <a href="/security/anti-spam-protection/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Security', 'click', 'anti-spam protection'); }">
+Anti-Spam Protection
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/domains/transfer/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Transfer to Us', 'click', 'transfer to us'); }">
+Transfer to Us
+<span class="gb-label gb-label--open-text">TRY ME</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/domains/transfer/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Transfer to Us', 'click', 'transfer domains'); }">
+Transfer Domains
+</a>
+                    <a href="/hosting/hosting-migrate-to-namecheap/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Transfer to Us', 'click', 'migrate hosting'); }">
+Migrate Hosting
+</a>
+                    <a href="/wordpress/migrate/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Transfer to Us', 'click', 'migrate wordpress'); }">
+Migrate WordPress
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="/help-center/" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'help center'); }">
+Help Center
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="/support/knowledgebase/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'knowledgebase'); }">
+Knowledgebase
+</a>
+                    <a href="/security/fix-hacked-website/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'fix hacked website'); }">
+Fix Hacked Website
+<span class="gb-label gb-label--price">SOS</span>
+</a>
+                    <a href="/guru-guides/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'guru guides'); }">
+Guru Guides
+</a>
+                    <a href="/blog/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'blog'); }">
+Blog
+</a>
+                    <a href="/build-and-grow-hub/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'build + grow hub'); }">
+Build + Grow Hub
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                    <a href="/status-updates/" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Help Center', 'click', 'status updates'); }">
+Status Updates
+</a>
+                    
+            </div>
+        
+        </div>
+    
+        <div class="gb-dropdown gb-dropdown--bubble">
+            <a href="#" class=" gb-input-group__item gb-navbar__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'account'); } location.href='https://ap.www.namecheap.com'; return false;">
+Account
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+            <button tabindex="-1" class="gb-input-group__item gb-btn gb-btn--link gb-dropdown__toggle" aria-label="toggle-button"></button>
+
+        
+            <div class="gb-dropdown__holder">
+                <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'dashboard'); } location.href='https://ap.www.namecheap.com'; return false;">
+Dashboard
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'expiring soon'); } location.href='https://ap.www.namecheap.com/expiringsoon/domains'; return false;">
+Expiring Soon
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'domain list'); } location.href='https://ap.www.namecheap.com/Domains/DomainList'; return false;">
+Domain List
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'hosting list'); } location.href='https://ap.www.namecheap.com/ProductList/HostingSubscriptions'; return false;">
+Hosting List
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'private email'); } location.href='https://ap.www.namecheap.com/ProductList/EmailSubscriptions'; return false;">
+Private Email
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'ssl certificates'); } location.href='https://ap.www.namecheap.com/ProductList/SslCertificates'; return false;">
+SSL Certificates
+</a>
+                    <a href="/apps/subscriptions" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'subscriptions'); }">
+Subscriptions
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'my offers'); } location.href='https://ap.www.namecheap.com/myoffers/offers'; return false;">
+My Offers
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                    <a href="#" class=" gb-dropdown__item" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Account', 'click', 'profile'); } location.href='https://ap.www.namecheap.com/settings/personal-info/'; return false;">
+Profile
+</a>
+                    
+            </div>
+        
+        </div>
+    
+						</div>
+					</nav>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+    <!-- HEADER END -->
+
+	
+    
+    
+        
+<!-- Large Hero with Search -->
+<div id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl00_heroContainer" class="hero group" style="background-color:#d5d6d8; background-image:url(https://files.namecheap.com/cdn/1300/assets/img/heroes/support-small.jpg); background-repeat:no-repeat; background-position:top center;">
+    <picture></picture>
+    <div class="hero-body">
+    
+<div class="headline">
+    <h1>API Documentation</h1>
+    <p id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl00_mainHeadline_subHeadingLiteral">Everything you must know in one place</p>
+    
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    
+
+
+</div>
+<!-- .hero -->
+
+
+
+
+<div class="gb-scope">
+    <nav class="gb-breadcrumbs">
+        <div class="gb-container">
+            <div class="gb-d-none gb-d-md-block">
+                
+                        <a href="/support/" class="gb-breadcrumbs__item">Support</a>
+                    
+                        <span class="gb-breadcrumbs__item">API</span>
+                    
+                        <a href="/support/api/methods/" class="gb-breadcrumbs__item">Methods</a>
+                    
+                        <a href="/support/api/methods/domains-dns/" class="gb-breadcrumbs__item">Domains.dns</a>
+                    
+
+                <span class="gb-breadcrumbs__item">
+                    SetCustom
+                </span>
+            </div>
+
+            <div class="gb-d-md-none">
+                <a href="/support/api/methods/domains-dns/" class="gb-breadcrumbs__item-mobile">Domains.dns</a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="grid-row group api-docs"><!-- /div or equiv in ListContainerEnd -->
+
+<nav class="grid-col one-sixth  " role="navigation"><!-- /div or equiv in ListContainerEnd -->
+
+
+
+<ul class="kb-menu expanded"><li ><a href="/support/api/methods/domains/" >domains</a>
+<a href="/support/api/methods/domains/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/domains/get-list/" >getList</a>
+<li ><a href="/support/api/methods/domains/get-contacts/" >getContacts</a>
+<li ><a href="/support/api/methods/domains/create/" >create</a>
+<li ><a href="/support/api/methods/domains/get-tld-list/" >getTldList</a>
+<li ><a href="/support/api/methods/domains/set-contacts/" >setContacts</a>
+<li ><a href="/support/api/methods/domains/check/" >check</a>
+<li ><a href="/support/api/methods/domains/reactivate/" >reactivate</a>
+<li ><a href="/support/api/methods/domains/renew/" >renew</a>
+<li ><a href="/support/api/methods/domains/get-registrar-lock/" >getRegistrarLock</a>
+<li ><a href="/support/api/methods/domains/set-registrar-lock/" >setRegistrarLock</a>
+<li ><a href="/support/api/methods/domains/get-info/" >getInfo</a>
+</ul>
+<li  class="selected expanded"><a href="/support/api/methods/domains-dns/" >domains.dns</a>
+<a href="/support/api/methods/domains-dns/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/domains-dns/set-default/" >setDefault</a>
+<li  class="selected expanded"><a  >setCustom</a>
+<li ><a href="/support/api/methods/domains-dns/get-list/" >getList</a>
+<li ><a href="/support/api/methods/domains-dns/get-hosts/" >getHosts</a>
+<li ><a href="/support/api/methods/domains-dns/get-email-forwarding/" >getEmailForwarding</a>
+<li ><a href="/support/api/methods/domains-dns/set-email-forwarding/" >setEmailForwarding</a>
+<li ><a href="/support/api/methods/domains-dns/set-hosts/" >setHosts</a>
+</ul>
+<li ><a href="/support/api/methods/domains-ns/" >domains.ns</a>
+<a href="/support/api/methods/domains-ns/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/domains-ns/create/" >create</a>
+<li ><a href="/support/api/methods/domains-ns/delete/" >delete</a>
+<li ><a href="/support/api/methods/domains-ns/getinfo/" >getInfo</a>
+<li ><a href="/support/api/methods/domains-ns/update/" >update</a>
+</ul>
+<li ><a href="/support/api/methods/domains-transfer/" >domains.transfer</a>
+<a href="/support/api/methods/domains-transfer/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/domains-transfer/create/" >create</a>
+<li ><a href="/support/api/methods/domains-transfer/get-status/" >getStatus</a>
+<li ><a href="/support/api/methods/domains-transfer/update-status/" >updateStatus</a>
+<li ><a href="/support/api/methods/domains-transfer/get-list/" >getList</a>
+</ul>
+<li ><a href="/support/api/methods/ssl/" >ssl</a>
+<a href="/support/api/methods/ssl/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/ssl/create/" >create</a>
+<li ><a href="/support/api/methods/ssl/get-list/" >getList</a>
+<li ><a href="/support/api/methods/ssl/parse-csr/" >parseCSR</a>
+<li ><a href="/support/api/methods/ssl/get-approver-email-list/" >getApproverEmailList</a>
+<li ><a href="/support/api/methods/ssl/activate/" >activate</a>
+<li ><a href="/support/api/methods/ssl/resend-approver-email/" >resendApproverEmail</a>
+<li ><a href="/support/api/methods/ssl/get-info/" >getInfo</a>
+<li ><a href="/support/api/methods/ssl/renew/" >renew</a>
+<li ><a href="/support/api/methods/ssl/reissue/" >reissue</a>
+<li ><a href="/support/api/methods/ssl/resend-fulfillment-email/" >resendfulfillmentemail</a>
+<li ><a href="/support/api/methods/ssl/purchasemoresans/" >purchasemoresans</a>
+<li ><a href="/support/api/methods/ssl/revokecertificate/" >revokecertificate</a>
+<li ><a href="/support/api/methods/ssl/editdcvmethod/" >editDCVMethod</a>
+</ul>
+<li ><a href="/support/api/methods/users/" >users</a>
+<a href="/support/api/methods/users/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/users/get-pricing/" >getPricing</a>
+<li ><a href="/support/api/methods/users/get-balances/" >getBalances</a>
+<li ><a href="/support/api/methods/users/change-password/" >changePassword</a>
+<li ><a href="/support/api/methods/users/update/" >update</a>
+<li ><a href="/support/api/methods/users/create-add-funds-request/" >createaddfundsrequest</a>
+<li ><a href="/support/api/methods/users/get-add-funds-status/" >getAddFundsStatus</a>
+<li ><a href="/support/api/methods/users/create/" >create</a>
+<li ><a href="/support/api/methods/users/login/" >login</a>
+<li ><a href="/support/api/methods/users/reset-password/" >resetPassword</a>
+</ul>
+<li ><a href="/support/api/methods/users-address/" >users.address</a>
+<a href="/support/api/methods/users-address/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/users-address/create/" >create</a>
+<li ><a href="/support/api/methods/users-address/delete/" >delete</a>
+<li ><a href="/support/api/methods/users-address/get-info/" >getInfo</a>
+<li ><a href="/support/api/methods/users-address/get-list/" >getList</a>
+<li ><a href="/support/api/methods/users-address/set-default/" >setDefault</a>
+<li ><a href="/support/api/methods/users-address/update/" >update</a>
+</ul>
+<li ><a href="../../domainprivacy/" >domainprivacy</a>
+<a href="../../domainprivacy/" class="toggle">+</a>
+<ul>
+<li ><a href="/support/api/methods/domainprivacy/change-email-address/" >changeemailaddress</a>
+<li ><a href="/support/api/methods/domainprivacy/enable/" >enable</a>
+<li ><a href="/support/api/methods/domainprivacy/disable/" >disable</a>
+<li ><a href="/support/api/methods/domainprivacy/getlist/" >getList</a>
+<li ><a href="/support/api/methods/domainprivacy/renew/" >renew</a>
+</ul>
+</ul>
+</nav>
+<div class="grid-col two-thirds  " ><!-- /div or equiv in ListContainerEnd -->
+
+
+
+<h2>namecheap.domains.dns.setCustom</h2> <p>Sets domain to use custom DNS servers.</p> <div class="alert simple error"> <p> <strong>NOTE:</strong> Services like URL forwarding, Email forwarding, Dynamic DNS will not work for domains using custom nameservers</p> </div>
+
+
+
+
+<h3>Example Request</h3>
+<span id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_goondocks_usercontrols_formatcode_ascx12_Label1"><pre class="prettyprint linenums">
+https://api.namecheap.com/xml.response?ApiUser=apiexample&amp;ApiKey=56b4c87ef4fd49cb96d915c0db68194&amp;UserName=apiexample&amp;Command=namecheap.domains.dns.setCustom&amp;ClientIp=192.168.1.109&amp;SLD=domain&amp;TLD=com&amp;NameServers=dns1.name-servers.com,dns2.name-servers.com</pre></span>
+
+<h2>Request Parameters</h2> <p><a href="/support/api/global-parameters/">Global parameters</a> are not shown here for clarity, but should be present in <em><strong>all</strong></em> requests</p> <table class="items"> <thead> <tr> <th>Name</th> <th>Type</th> <th>MaxLength</th> <th>Required?</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>SLD</td> <td>String</td> <td>70</td> <td>Yes</td> <td>SLD of the DomainName</td> </tr> <tr> <td>TLD </td> <td>String</td> <td>10 </td> <td>Yes </td> <td>TLD of the DomainName</td> </tr> <tr> <td>Nameservers </td> <td>String</td> <td>1200</td> <td>Yes</td> <td>A comma-separated list of name servers to be associated with this domain</td> </tr> </tbody> </table>
+
+
+
+
+<h3>Example Response</h3>
+<span id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_goondocks_usercontrols_formatcode_ascx1_Label1"><pre class="prettyprint linenums">
+<span class="kwrd">&lt;?</span><span class="html">xml</span> <span class="attr">version</span><span class="kwrd">="1.0"</span> <span class="attr">encoding</span><span class="kwrd">="UTF-8"</span>?<span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">ApiResponse</span> <span class="attr">xmlns</span><span class="kwrd">="http://api.namecheap.com/xml.response"</span> <span class="attr">Status</span><span class="kwrd">="OK"</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">Errors</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">RequestedCommand</span><span class="kwrd">&gt;</span>namecheap.domains.dns.setCustom<span class="kwrd">&lt;/</span><span class="html">RequestedCommand</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">CommandResponse</span> <span class="attr">Type</span><span class="kwrd">="namecheap.domains.dns.setCustom"</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">DomainDNSSetCustomResult</span> <span class="attr">Domain</span><span class="kwrd">="domain.com"</span> <span class="attr">Updated</span><span class="kwrd">="true"</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;/</span><span class="html">CommandResponse</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">Server</span><span class="kwrd">&gt;</span>SERVER-NAME<span class="kwrd">&lt;/</span><span class="html">Server</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">GMTTimeDifference</span><span class="kwrd">&gt;</span>+5<span class="kwrd">&lt;/</span><span class="html">GMTTimeDifference</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">ExecutionTime</span><span class="kwrd">&gt;</span>32.76<span class="kwrd">&lt;/</span><span class="html">ExecutionTime</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">ApiResponse</span><span class="kwrd">&gt;</span></pre></span>
+
+<h3>Response Parameters</h3> <table> <thead> <tr> <th>Name</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>Domain</td> <td>The domain name that you are trying to set custom nameservers for.</td> </tr> <tr> <td>Updated</td> <td>Indicates whether the custom nameservers were set successfully.</td> </tr> </tbody> </table>
+
+
+
+
+<h3>Error Codes</h3> <p>Specifies the error codes that might be returned from this method</p> <table class="items"> <thead> <tr> <th>Number</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>2019166</td> <td>Domain not found</td> </tr> <tr> <td>2016166</td> <td>Domain is not associated with your account</td> </tr> <tr> <td>2030166</td> <td>Edit permission for domain is not supported</td> </tr> <tr> <td>3031510</td> <td>Error From Enom when Errorcount &lt;&gt; 0</td> </tr> <tr> <td>3050900</td> <td>Unknown error from Enom</td> </tr> <tr> <td>4022288</td> <td>Unable to get nameserver list</td> </tr> </tbody> </table>
+
+
+
+<div id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl11_commentsContainer1">
+    <h4 class="kb-article-title">Comments</h4>
+	<div class="content">
+		<div class="alert">
+		
+        <p>We welcome your comments, questions, corrections and additional information relating to this article. Your comments may take some time to appear. Please be aware that off-topic comments will be deleted.</p>
+        <p>If you need specific help with your account, feel free to contact our <a href="/help-center/">Support Team.</a> Thank you.</p>
+	</div>
+	</div>
+	<div id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl11_disqusComments1"></div>
+</div>
+
+
+<script>
+ $(function(){
+      prettyPrint();
+});
+</script></div>
+<nav class="grid-col one-sixth  secondary" role="navigation"><!-- /div or equiv in ListContainerEnd -->
+
+
+
+<ul class="menu right"><li class="L0"><a href="/support/api/intro/" class="">Introduction</a>
+<li class="current L0"><a href="../../" class="">Methods</a>
+<li class="L0"><a href="/support/api/global-parameters/" class="">Global Parameters</a>
+<li class="L0"><a href="/support/api/extended-attributes/" class="">Extended Attributes</a>
+<li class="L0"><a href="/support/api/transfer-statuses/" class="">Transfer Statuses</a>
+<li class="L0"><a href="/support/api/error-codes/" class="">Full Error Code List</a>
+<li class="L0"><a href="/support/api/change-log/" class="">Change Log</a>
+</ul>
+</nav>
+</div>
+
+    
+
+
+
+
+    <!-- Chat Promo -->
+    
+		
+			<div class="gb-scope">
+				<div class="gb-livechat gb-py-4 gb-py-lg-8 gb-text-center" data-ncid="livechat">
+					<div class="gb-container">
+						<div class="gb-row gb-row--middle gb-row-md--center">
+							<div class="gb-col-md-auto">
+								<p class="gb-text-bold gb-mb-3 gb-mb-md-0">
+									<span class="gb-livechat__title">Need help?</span> We're always here for you.
+								</p>
+							</div>
+							<div class="gb-col-md-auto">
+								<a href="/support/live-chat//general/" target="_blank" class="gb-btn gb-btn--secondary gb-btn--lg"><i class="gb-icon gb-icon-support"></i> Chat with a Live Person</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+    
+    <!-- FOOTER CONTENT STARTS-->
+    
+<footer id="gbFooter" class="gb-scope">
+    <div class="gb-footer-sprite">
+        <div class="gb-footer gb-py-6" data-ncid="footer">
+            <div class="gb-container">
+                <div class="gb-section gb-row gb-row--between gb-pb-3 gb-mb-4">
+                    
+                        <div class="gb-col-lg-5">
+                            <div class="gb-mb-4">
+                                <a href="/">
+                                    <picture class="gb-footer-logo">
+                                        <img src="https://files.namecheap.com/cdn/1300/assets/img/logos/namecheap-dkbg.png" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_footerControl_footerLogo" alt="Namecheap" />
+                                    </picture>
+                                </a>
+                            </div>
+                            <p class="gb-mb-3 gb-color-gray-10">We make registering, hosting, and managing domains for yourself or others easy and affordable, because the internet needs people.</p>
+                            <div class="gb-section gb-pb-3 gb-mb-3 gb-text-base">
+                                <p class="gb-mb-1">
+                                    <a class="gb-link gb-link--with-icon" href="/about/">
+                                        <span class="gb-link__text">About Namecheap</span>
+                                        <i class="gb-icon gb-icon-arrow-forward"></i>
+                                    </a>
+                                </p>
+                                <p class="gb-mb-0">
+                                    <a class="gb-link gb-link--with-icon" href="/blog/">
+                                        <span class="gb-link__text">Read our blog</span>
+                                        <i class="gb-icon gb-icon-arrow-forward"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <p class="gb-mb-2">
+                                <span class="gb-text-base"> Join Our Newsletter &amp; Marketing Communication</span>
+                                <br>
+                                <span class="gb-color-gray-10"> We'll send you news and offers.</span>
+                            </p>
+                            <div class="gb-mb-2">
+                                <fieldset class="gb-input-group" data-ncid="form-subscribe">
+                                    <input type="email" name="email" class="gb-input-group__item gb-form-control gb-form-control--lg" data-ncid="input-subscribe" placeholder="you@yours.com" aria-labelledby="join-newsletter">
+                                    <button type="button" class="ncRedirectButton gb-row gb-row--center gb-input-group__item gb-btn gb-btn--lg gb-btn--primary gb-mr-0" value="eyJ1IjoiL25ld3NsZXR0ZXIvTmV3c2xldHRlclN1YnNjcmliZS5hc3B4IiwibSI6IkdFVCIsImIiOiJGYWxzZSIsInMiOiJmaWVsZHNldCIsInAiOiBbeyJuIjoiZW1haWwiLCJ2IjoiIiwiZiI6ImVtYWlsIn0seyJuIjoiYWN0aW9uIiwidiI6InN1YnNjcmliZSIsImYiOiIifV19" name="ctl00$ctl00$ctl00$ctl00$base_content$web_base_content$footerControl$newsletterSubmit$actionObjectPlaceHolder">Join</button>
+
+
+                                </fieldset>
+                            </div>
+                            <ul class="gb-row gb-social gb-list-unstyled">
+                                <li class="gb-mr-1 gb-mb-small">
+                                    <a rel="noopener" class="gb-social__link" href="https://twitter.com/namecheap" target="_blank" title="Twitter" data-ncid="icon-social-Twitter"><i class="gb-sprite-twitter"></i></a>
+                                </li>
+                                <li class="gb-mr-1 gb-mb-small">
+                                    <a rel="noopener" class="gb-social__link" href="https://www.facebook.com/NameCheap" target="_blank" title="Facebook" data-ncid="icon-social-Facebook"><i class="gb-sprite-facebook"></i></a>
+                                </li>
+                                <li class="gb-mr-1 gb-mb-small">
+                                    <a rel="noopener" class="gb-social__link" href="https://www.instagram.com/namecheap/" target="_blank" title="Instagram" data-ncid="icon-social-Instagram"><i class="gb-sprite-instagram"></i></a>
+                                </li>
+                                <li class="gb-mr-1 gb-mb-small">
+                                    <a rel="noopener" class="gb-social__link" href="https://www.pinterest.com/namecheap/" target="_blank" title="Pinterest" data-ncid="icon-social-Pinterest"><i class="gb-sprite-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gb-footer-links-list gb-col-lg-7 gb-col-xl-6 gb-d-none gb-d-lg-block">
+                            <div class="gb-row">
+                                
+        <nav class="gb-col-4">
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/domains/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domains', 'click', 'domains'); }">
+Domains
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/domains/domain-name-search/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domain Name Search', 'click', 'domain name search'); }">
+Domain Name Search
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/domains/transfer/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domain Transfer', 'click', 'domain transfer'); }">
+Domain Transfer
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/domains/explore-new-tlds/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:New TLDs', 'click', 'new tlds'); }">
+New TLDs
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/domains/personal/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Personal Domain', 'click', 'personal domain'); }">
+Personal Domain
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/market/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Namecheap Market', 'click', 'namecheap market'); }">
+Namecheap Market
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/domains/whois/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Whois Lookup', 'click', 'whois lookup'); }">
+Whois Lookup
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/premiumdns/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:PremiumDNS', 'click', 'premiumdns'); }">
+PremiumDNS
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/domains/freedns/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:FreeDNS', 'click', 'freedns'); }">
+FreeDNS
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/hosting/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Hosting', 'click', 'hosting'); }">
+Hosting
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/hosting/shared/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Shared Hosting', 'click', 'shared hosting'); }">
+Shared Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/wordpress/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Hosting for WordPress', 'click', 'hosting for wordpress'); }">
+Hosting for WordPress
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/reseller/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Reseller Hosting', 'click', 'reseller hosting'); }">
+Reseller Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/vps/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:VPS Hosting', 'click', 'vps hosting'); }">
+VPS Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/dedicated-servers/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Dedicated Servers', 'click', 'dedicated servers'); }">
+Dedicated Servers
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/email/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Private Email Hosting', 'click', 'private email hosting'); }">
+Private Email Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/hosting-migrate-to-namecheap/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Migrate to Namecheap', 'click', 'migrate to namecheap'); }">
+Migrate to Namecheap
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/wordpress/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:WordPress', 'click', 'wordpress'); }">
+WordPress
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/hosting/shared/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Shared Hosting', 'click', 'shared hosting'); }">
+Shared Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/wordpress/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Hosting for WordPress', 'click', 'hosting for wordpress'); }">
+Hosting for WordPress
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/wordpress/migrate/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Migrate WordPress', 'click', 'migrate wordpress'); }">
+Migrate WordPress
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+        </nav>
+    
+        <nav class="gb-col-4">
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/security/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Security', 'click', 'security'); }">
+Security
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/security/domain-privacy-service/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domain Privacy', 'click', 'domain privacy'); }">
+Domain Privacy
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/protect-website/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Website Security', 'click', 'website security'); }">
+Website Security
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/fix-hacked-website/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Fix Hacked Website', 'click', 'fix hacked website'); }">
+Fix Hacked Website
+<span class="gb-label gb-label--price">SOS</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/premiumdns/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:PremiumDNS', 'click', 'premiumdns'); }">
+PremiumDNS
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/supersonic-cdn/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:CDN', 'click', 'cdn'); }">
+CDN
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/vpn/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:FastVPN', 'click', 'fastvpn'); }">
+FastVPN
+<span class="gb-label gb-label--marketing">UPDATED</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/cyber-insurance/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Cyber Insurance', 'click', 'cyber insurance'); }">
+Cyber Insurance
+<span class="gb-label gb-label--marketing">NEW</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/2fa-two-factor-authentication/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:2FA', 'click', '2fa'); }">
+2FA
+</a>
+                            </li>
+                            
+                                <li class="feedback ">
+                                    <a href="/dns/free-public-dns/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Public DNS', 'click', 'public dns'); }">
+Public DNS
+</a>
+                            </li>
+                            
+                                <li class="gb-label gb-label--marketing ">
+                                    <a href="/security/anti-spam-protection/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Anti-Spam Protection', 'click', 'anti-spam protection'); }">
+Anti-Spam Protection
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/domains/transfer/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Transfer to Us', 'click', 'transfer to us'); }">
+Transfer to Us
+<span class="gb-label gb-label--open-text">TRY ME</span>
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/domains/transfer/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domain Transfer', 'click', 'domain transfer'); }">
+Domain Transfer
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/hosting-migrate-to-namecheap/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Migrate Hosting', 'click', 'migrate hosting'); }">
+Migrate Hosting
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/wordpress/migrate/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Migrate WordPress', 'click', 'migrate wordpress'); }">
+Migrate WordPress
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/security/ssl-certificates/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:SSL Certificates', 'click', 'ssl certificates'); }">
+SSL Certificates
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/ssl-com/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:SSL.com', 'click', 'ssl.com'); }">
+SSL.com
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/organization-validation/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Organization Validation', 'click', 'organization validation'); }">
+Organization Validation
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/domain-validation/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Domain Validation', 'click', 'domain validation'); }">
+Domain Validation
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/extended-validation/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Extended Validation', 'click', 'extended validation'); }">
+Extended Validation
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/single-domain/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Single Domain', 'click', 'single domain'); }">
+Single Domain
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/wildcard/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Wildcard', 'click', 'wildcard'); }">
+Wildcard
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/security/ssl-certificates/multi-domain/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Multi-Domain', 'click', 'multi-domain'); }">
+Multi-Domain
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/resellers/ssl-certificates/join-the-program/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Resellers', 'click', 'resellers'); }">
+Resellers
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/resellers/ssl-certificates/join-the-program/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:SSL Certificates', 'click', 'ssl certificates'); }">
+SSL Certificates
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/hosting/reseller/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Reseller Hosting', 'click', 'reseller hosting'); }">
+Reseller Hosting
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/promos/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Promos', 'click', 'promos'); }">
+Promos
+</a>
+                    </p>
+                    
+                </div>
+            
+        </nav>
+    
+        <nav class="gb-col-4">
+            
+                <div class="gb-mb-3">
+                    <p class="feedback gb-mb-small gb-text-bold">
+                        <a href="/guru-guides/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Guru Guides', 'click', 'guru guides'); }">
+Guru Guides
+</a>
+                    </p>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/help-center/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Help Center', 'click', 'help center'); }">
+Help Center
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/status-updates/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Status Updates', 'click', 'status updates'); }">
+Status Updates
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/support/knowledgebase/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Knowledgebase', 'click', 'knowledgebase'); }">
+Knowledgebase
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="https://support.namecheap.com/index.php?/Tickets/Submit" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Submit Ticket', 'click', 'submit ticket'); }">
+Submit Ticket
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/help-center/live-chat/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Live Chat', 'click', 'live chat'); }">
+Live Chat
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/support/knowledgebase/article.aspx/9196/5/how-and-where-can-i-file-abuse-complaints/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Report Abuse', 'click', 'report abuse'); }">
+Report Abuse
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <a href="/apps/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Marketing Tools', 'click', 'marketing tools'); }">
+Marketing Tools
+</a>
+                    </p>
+                    
+                        <ul class="gb-list-unstyled gb-text-light">
+                            
+                                <li >
+                                    <a href="/apps/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Marketplace', 'click', 'marketplace'); }">
+Marketplace
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/build-and-grow-hub/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:How to Get Started', 'click', 'how to get started'); }">
+How to Get Started
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/apps/business-starter-kit/?aff_sub2=top_nav" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Business Starter Kit', 'click', 'business starter kit'); }">
+Business Starter Kit
+<span class="gb-label gb-label--open-text">FREE</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/apps/business-starter-kit/?aff_sub2=top_nav" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Free LLC', 'click', 'free llc'); }">
+Free LLC
+<span class="gb-label gb-label--marketing">US ONLY</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Relate Marketing Suite', 'click', 'relate marketing suite'); }">
+Relate Marketing Suite
+<span class="gb-label gb-label--open-text">SAVE</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/seo/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:RelateSEO', 'click', 'relateseo'); }">
+RelateSEO
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/social/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:RelateSocial', 'click', 'relatesocial'); }">
+RelateSocial
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/reviews/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:RelateReviews', 'click', 'relatereviews'); }">
+RelateReviews
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/ads/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:RelateAds', 'click', 'relateads'); }">
+RelateAds
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/local/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:RelateLocal', 'click', 'relatelocal'); }">
+RelateLocal
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/relate/radar/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Brand Monitoring', 'click', 'brand monitoring'); }">
+Brand Monitoring
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/visual/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Visual', 'click', 'visual'); }">
+Visual
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/visual/site-maker/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Site Maker', 'click', 'site maker'); }">
+Site Maker
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/visual/font-generator/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Font Maker', 'click', 'font maker'); }">
+Font Maker
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/logo-maker/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Logo Maker', 'click', 'logo maker'); }">
+Logo Maker
+<span class="gb-label gb-label--feature">AI</span>
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/visual/business-name-generator/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Business Name Generator', 'click', 'business name generator'); }">
+Business Name Generator
+</a>
+                            </li>
+                            
+                                <li >
+                                    <a href="/visual/card-maker/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Business Card Maker', 'click', 'business card maker'); }">
+Business Card Maker
+</a>
+                            </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class="feedback gb-mb-small gb-text-bold">
+                        <a href="/careers/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Careers', 'click', 'careers'); }">
+Careers
+</a>
+                    </p>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class="feedback gb-mb-small gb-text-bold">
+                        <a href="/affiliates/" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Affiliates', 'click', 'affiliates'); }">
+Affiliates
+</a>
+                    </p>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class="feedback gb-mb-small gb-text-bold">
+                        <a href="mailto:feedback@namecheap.com?subject=Send us Feedback" onclick="if (typeof (LogGAEvent) === 'function') { LogGAEvent('Footer:Send us Feedback', 'click', 'send us feedback'); }">
+Send us Feedback
+</a>
+                    </p>
+                    
+                </div>
+            
+                <div class="gb-mb-3">
+                    <p class=" gb-mb-small gb-text-bold">
+                        <div tabindex="0" role="button" data-acsb="trigger" class="accessibility">Accessibility</div>
+                    </p>
+                    
+                </div>
+            
+        </nav>
+    
+                            </div>
+                        </div>
+                    
+
+                    
+                </div>
+
+                <div class="gb-row gb-row--between gb-row--top gb-text-xsmall gb-text-base">
+                    <div class="gb-col-lg gb-mb-2 gb-mb-lg-0">
+                        <p class="gb-mb-1"><span>The entirety of this site is protected by copyright &copy; 2000–2026 Namecheap, Inc.</span></p>
+                        <p class="gb-mb-0"><span>4600 East Washington Street, Suite 300, Phoenix, AZ 85034, USA</span></p>
+                    </div>
+                    <div class="gb-col-lg-auto">
+                        
+                        <a class="gb-mr-2" href="/legal/" data-ncid="link-terms"><span>Terms and Conditions</span></a>
+                        <a class="gb-mr-2" href="/legal/general/privacy-policy/" data-ncid="link-privacy"><span>Privacy Policy</span></a>
+                        <a class="gb-mr-2" href="/legal/domains/udrp/" data-ncid="link-udrp">
+                            <span><abbr title="Uniform Domain Name Dispute Resolution Policy">UDRP</abbr></span>
+                        </a>
+                        <a class="gb-mr-2" href="/legal/general/domain-registration-data-disclosure-policy-guide/" data-ncid="link-domain-registration"><span>Domain Registration Data Disclosure Policy</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gb-well gb-well--flat gb-text-center gb-pt-4 gb-pb-2">
+            <div class="gb-container">
+                <div class="gb-row gb-row--middle gb-row--center">
+                    <div class="gb-col-12 gb-col-md-auto gb-mb-2">
+                        <strong>WE SUPPORT</strong>
+                    </div>
+                    <div class="gb-col-auto gb-mb-2">
+                        <i class="gb-sprite-eff">
+                            <span>Electronic Frontier Foundation</span>
+                        </i>
+                    </div>
+                    <div class="gb-col-auto gb-mb-2">
+                        <i class="gb-sprite-fftf">
+                            <span>Fight For The Future</span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gb-pt-3 gb-pb-2 gb-text-small gb-color-gray-20">
+            <div class="gb-container">
+                <div class="gb-row">
+                    <div class="gb-col-md-4 gb-row--no-gutters gb-row--middle gb-mb-3">
+                        <div class="gb-col-auto gb-pr-2"><i class="gb-sprite-icann"></i></div>
+                        <div class="gb-col">
+                            <p class="gb-mb-0"><span>We are an <abbr title="Internet Corporation for Assigned Names and Numbers">ICANN</abbr>-accredited registrar. <br>
+                                <span>Serving customers since 2001.</span></span></p>
+                        </div>
+                    </div>
+                    <div class="gb-col-md gb-mb-3">
+                        <div>
+                            <p class="gb-mb-2">Payment Options</p>
+                            <ul class="gb-row gb-list-unstyled">
+                                <li class="gb-mb-1 gb-mr-small" title="American Express" data-ncid="payment-American-Express"><i class="gb-sprite-american-express"><span>American Express</span></i>
+                                </li>
+                                <li class="gb-mb-1 gb-mr-small" title="Bitcoin" data-ncid="payment-Bitcoin"><i class="gb-sprite-bitcoin"><span>Bitcoin</span></i></li>
+                                <li class="gb-mb-1 gb-mr-small" title="MasterCard" data-ncid="payment-MasterCard"><i class="gb-sprite-mastercard"><span>MasterCard</span></i></li>
+                                <li class="gb-mb-1 gb-mr-small" title="PayPal" data-ncid="payment-PayPal"><i class="gb-sprite-paypal"><span>PayPal</span></i></li>
+                                <li class="gb-mb-1 gb-mr-small" title="Visa" data-ncid="payment-Visa"><i class="gb-sprite-visa"><span>Visa</span></i>
+                                </li>
+                                <li class="gb-mb-1 gb-mr-small" title="Discover" data-ncid="payment-Discover"><i class="gb-sprite-discover"><span>Discover</span></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gb-col-lg-auto gb-mb-2">
+                        <ul class="gb-row gb-list-unstyled gb-mt-lg-3 gb-text-xl-right">
+                            <li id="js-sectigo">
+                                <a href="https://secure.trust-provider.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=SECEV&v_search=https://www.namecheap.com/&x=6&y=5" 
+                                    target="_blank" rel=""><!--
+                                                --><img src="https://files.namecheap.com/cdn/1300/assets/img/logos/sectigo_trust_seal_md_2x.png" id="ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_footerControl_Sentigo" width="106" height="42" oncontextmenu="return false;" alt="Sentigo" style="border: none" data-ncid="link-sectigo" />
+                                </a>
+                            </li>
+                            <li class="gb-mb-1 gb-mr-small">
+                                <a target="_blank" rel="noopener" href="https://nc1.app.link/W1qV0gjLZG" title="Android app on google play" data-ncid="link-google-play"><i class="gb-sprite-google-play"><span>Android app on google
+                                            play</span></i></a>
+                            </li>
+                            <li class="gb-mb-1 gb-mr-small">
+                                <a target="_blank" rel="noopener" href="https://nc1.app.link/W1qV0gjLZG" title="iOS App Store" data-ncid="link-app-store"><i class="gb-sprite-app-store"><span>iOS App
+                                            Store</span></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <div id="dock">
+		<a href="#" class="close">Ã— Close</a>
+	</div>
+
+	<div id="bottomSeoFooter">
+	
+    
+
+	</div>
+
+	<div id="bottomSpacer"></div>
+
+	<!-- FOOTER CONTENT ENDS -->
+
+
+    <script type="text/javascript" src="https://files.namecheap.com/cdn/0/assets/js/v1300.global-script.min.js"></script>
+
+	
+	
+
+	<script type="text/javascript">
+	 $(document).ready(function () {
+            if (window.location.hostname != "www.namecheap.com") { $("div.VerisignSealDiv").hide(); }
+	    });
+	</script>
+
+	
+	
+    
+    
+
+
+
+	<script type="text/javascript">
+	 var _gaq = _gaq || [];
+	</script>
+    <script>
+	function addCartAjax() {
+    $.ajax({
+    	"url": "/cart/json/operation.aspx/GetSubtotalPriceText",
+        type: 'post',
+        contentType: 'application/json',
+        dataType: 'json'
+    }).done(function(data){     	 	
+	 	if (data.d) {
+	 	    $('.cart-dollar-value').text(data.d);
+	 	    $('.icon-cart').addClass('icon-cart-full');
+	 	    $('.expandable.shopping-cart').removeClass('empty');
+	 	    $('.expandable.shopping-cart').addClass('expanded');
+			$('#header .shopping-cart .panel').css('display', 'block');
+	 	}	
+    }).fail(function(){});
+  }
+  
+  
+        function shoppingCartUpdated()
+        {
+            addCartAjax();		    
+        }
+   
+        document.addEventListener('shoppingCartUpdated', shoppingCartUpdated);
+    </script>   
+
+	
+	
+
+<script type="text/javascript">
+    var disqus_container_id = 'ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl11_disqusComments1';
+
+    jQuery(document).ready(function () {
+        $('#ctl00_ctl00_ctl00_ctl00_base_content_web_base_content_home_content_page_content_left_ctl11_commentsContainer1').appear(function () {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://Namecheap.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    })
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=namecheap">comments powered by Disqus.</a></noscript>
+</form>
+    <form id="clientForm" action=""></form>
+    <script type="text/javascript">
+        userAllowedScripsProcessor.activateUserAllowedScripts();
+    </script>    
+    
+<!-- Footer Extra Content Start -->
+<script src="https://cdn.engagement.ai/production/static/js/loader/chatLoader.v3.js" type="text/javascript" async crossorigin="anonymous"></script>
+<!-- Footer Extra Content End -->
+
+
+</body>
+</html>
