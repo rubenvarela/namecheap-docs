@@ -47,3 +47,4 @@ See [AGENTS.md](AGENTS.md).
 The fetch and conversion scripts live in a separate private repo; this repo receives only the docs. Don't send pull requests that change `markdown/` or `html/`: the next refresh overwrites them. Open an issue instead (wrong conversion, missing page, a caveat that's wrong).
 
 Not affiliated with or endorsed by Namecheap. The documentation content is Namecheap's; this is an unofficial copy for reference.
+<!-- publish test 2026-11-01T15:14:17Z -->
